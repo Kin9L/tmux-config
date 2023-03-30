@@ -3,6 +3,11 @@
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
+2. Install `xclip` to enable access to system's clipboard
+```bash
+sudo apt install xclip -y
+```
+
 
 2. Load configs to `tmux`
 ```bash
