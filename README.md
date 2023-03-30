@@ -8,8 +8,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 sudo apt install xclip -y
 ```
 
-
-2. Load configs to `tmux`
+3. Load configs to `tmux`
 ```bash
 tmux source ~/.tmux.conf
 ```
