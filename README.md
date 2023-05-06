@@ -1,4 +1,17 @@
-# tmux-config
+# Ubuntu environment setting
+
+## docker
+```bash
+sudo apt install snap -y
+sudo snap install docker
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+sudo chown root:docker /var/run/docker.sock
+```
+
+
+## tmux-config
 1. Install `TMP` tool
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
