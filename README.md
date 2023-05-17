@@ -1,5 +1,10 @@
 # Ubuntu environment setting
 
+## apt sources
+```bash
+sudo sed -i 's/[a-z.]*archive.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
+```
+
 ## docker
 ```bash
 sudo apt install snap -y
