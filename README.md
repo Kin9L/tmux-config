@@ -1,8 +1,21 @@
 # Ubuntu environment setting
 
-## apt sources
+## apt related
 ```bash
 sudo sed -i 's/[a-z.]*archive.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
+sudo apt update
+sudo apt install software-properties-common -y
+```
+
+## toolchain
+```bash
+# gcc
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
+sudo sed -i 's/http:\/\/ppa.launchpad.net/https:\/\/launchpad.proxy.ustclug.org/g' /etc/apt/sources.list.d/*.list
+sudo apt update
+sudo apt install gcc-11 -y
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 50
+
 ```
 
 ## docker
