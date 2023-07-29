@@ -18,6 +18,33 @@ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 50
 
 ```
 
+## pyenv
+```bash
+# install pyenv
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+
+# set up pyenv
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+
+source ~/.bashrc
+
+# install pyenv-virtualenv
+git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+
+# set up pyenv-virtualenv
+echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+
+source ~/.bashrc
+
+# install python
+pyenv install 3.7.17
+pyenv virtualenv 3.7.17 py3.7.17
+pyenv activate py3.7.17
+
+```
+
 ## docker
 ```bash
 sudo apt install snap -y
