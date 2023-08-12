@@ -7,6 +7,19 @@ sudo apt update
 sudo apt install software-properties-common -y
 ```
 
+## input method
+```bash
+sudo apt update
+sudo apt install fcitx -y
+sudo cp /usr/share/applications/fcitx.desktop /etc/xdg/autostart/
+sudo apt purge ibus -y
+sudo dpkg -i ~/Downloads/sogoupinyin_4.2.1.145_amd64.deb
+sudo apt install libqt5qml5 libqt5quick5 libqt5quickwidgets5 qml-module-qtquick2 -y
+sudo apt install libgsettings-qt1 -y
+```
+Fix Chinese words display errors: https://www.cnblogs.com/CodeAndMoe/p/14279135.html
+
+
 ## toolchain
 ```bash
 # gcc
