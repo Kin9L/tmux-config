@@ -20,6 +20,8 @@ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 50
 
 ## pyenv
 ```bash
+sudo apt install zlib1g-dev libssl-dev build-essential libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+
 # install pyenv
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
@@ -57,6 +59,10 @@ sudo chown root:docker /var/run/docker.sock
 
 
 ## tmux-config
+```bash
+sudo apt install tmux -y
+```
+
 1. Install `TMP` tool
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
