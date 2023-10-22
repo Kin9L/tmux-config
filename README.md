@@ -62,8 +62,16 @@ pyenv activate py3.7.17
 
 ## docker
 ```bash
+# snap
 sudo apt install snap -y
 sudo snap install docker
+
+# apt
+curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
 sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
