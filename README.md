@@ -97,3 +97,41 @@ sudo apt install xclip -y
 ```bash
 tmux source ~/.tmux.conf
 ```
+
+
+## Vscode
+
+### Python Formatter
+
+1. Install 'Ruff' extension in *Vscode*.
+2. Install 'Black' extension in *Vscode*.
+3. Add the following configs into `setting.json`
+```json
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": true,
+            "source.organizeImports.ruff": true
+        },
+        "editor.formatOnType": true
+    },
+    "editor.rulers": [80]
+```
+4. A config file can be added in the root path of the project for `Black` and `Ruff`
+
+```yaml
+# https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html
+[tool.black]
+line-length = 80
+
+# https://beta.ruff.rs/docs/settings/
+[tool.ruff]
+line-length = 80
+# https://beta.ruff.rs/docs/rules/
+select = ["E", "W", "F"]
+ignore = ["F401"]
+# Exclude a variety of commonly ignored directories.
+respect-gitignore = true
+ignore-init-module-imports = true
+```
