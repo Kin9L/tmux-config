@@ -135,3 +135,5 @@ ignore = ["F401"]
 respect-gitignore = true
 ignore-init-module-imports = true
 ```
+#### Reference
+https://blog.davidz.cn/post/python-linter-ruff-formatter-black
