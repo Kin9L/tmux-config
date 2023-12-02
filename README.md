@@ -116,6 +116,9 @@ tmux source ~/.tmux.conf
         },
         "editor.formatOnType": true
     },
+    "black-formatter.args": [
+        "--skip-string-normalization",
+    ],
     "editor.rulers": [80]
 ```
 4. A config file can be added in the root path of the project for `Black` and `Ruff`
