@@ -138,5 +138,17 @@ ignore = ["F401"]
 respect-gitignore = true
 ignore-init-module-imports = true
 ```
+#### VIM
+Use `jj` rather than `Esc`
+```json
+{
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ]
+}
+```
 #### Reference
 https://blog.davidz.cn/post/python-linter-ruff-formatter-black
