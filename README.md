@@ -93,11 +93,19 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 sudo apt install xclip -y
 ```
 
-3. Load configs to `tmux`
+3. Install `network bandwidth` plugin
+```bash
+sudo apt-get install gawk net-tools coreutils -y
+# add configs into .tmux.conf
+```
+
+4. Load configs to `tmux`
 ```bash
 tmux source ~/.tmux.conf
 ```
 
+### Reference
+1. https://github.com/xamut/tmux-network-bandwidth
 
 ## Vscode
 
