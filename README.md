@@ -190,5 +190,11 @@ Enable plugins.
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 ```
 
+Reconfig.
+```bash
+p10k configure
+```
+
 #### Reference
 https://blog.davidz.cn/post/python-linter-ruff-formatter-black
+https://www.haoyep.com/posts/zsh-config-oh-my-zsh/
