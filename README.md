@@ -158,5 +158,37 @@ Use `jj` rather than `Esc`
     ]
 }
 ```
+
+#### zsh
+```bash
+
+sudo apt install zsh git curl -y
+
+# no sudo
+chsh -s /bin/zsh
+sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
+
+# config theme
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+Modify `~/.zshrc`, applay this setting: `ZSH_THEME="powerlevel10k/powerlevel10k"`
+
+Install plugins.
+```bash
+
+# autosuggestions for commands
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+# highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
+
+```
+
+Enable plugins.
+```bash
+# Edit ~/.zshrc, changing the following contents.
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+```
+
 #### Reference
 https://blog.davidz.cn/post/python-linter-ruff-formatter-black
