@@ -107,6 +107,15 @@ tmux source ~/.tmux.conf
 ### Reference
 1. https://github.com/xamut/tmux-network-bandwidth
 
+## VIM
+
+```bash
+imap jj <Esc>
+```
+
+
+
+
 ## Vscode
 
 ### Python Formatter
