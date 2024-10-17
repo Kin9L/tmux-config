@@ -181,6 +181,9 @@ sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 Modify `~/.zshrc`, applay this setting: `ZSH_THEME="powerlevel10k/powerlevel10k"`
+```bash
+sed -i 's|ZSH_THEME="robbyrussell"|ZSH_THEME="powerlevel10k/powerlevel10k"|g' ~/.zshrc
+```
 
 Install plugins.
 ```bash
@@ -194,9 +197,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 
 Enable plugins.
+Edit ~/.zshrc, changing the following contents.
 ```bash
-# Edit ~/.zshrc, changing the following contents.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+sed -i "s|plugins=(git)|plugins=(git zsh-autosuggestions zsh-syntax-highlighting)|g" ~/.zshrc
 ```
 
 Reconfig.
