@@ -81,7 +81,13 @@ sudo chown root:docker /var/run/docker.sock
 
 ## tmux-config
 ```bash
+# ubuntu
 sudo apt install tmux -y
+sudo apt install xclip -y
+
+# mac
+brew install tmux
+brew install xclip
 ```
 
 1. Install `TMP` tool
@@ -209,4 +215,5 @@ p10k configure
 
 #### Reference
 https://blog.davidz.cn/post/python-linter-ruff-formatter-black
+<br>
 https://www.haoyep.com/posts/zsh-config-oh-my-zsh/
