@@ -18,6 +18,13 @@ sudo apt install libqt5qml5 libqt5quick5 libqt5quickwidgets5 qml-module-qtquick2
 sudo apt install libgsettings-qt1 -y
 ```
 Fix Chinese words display errors: https://www.cnblogs.com/CodeAndMoe/p/14279135.html
+Add the following settings into `/etc/environment`
+```bash
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+
+```
 
 
 ## toolchain
