@@ -44,9 +44,11 @@ wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
 Add the following contents into `/etc/apt/sources.list.d/llvm-apt.list`
 ```bash
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
-deb [arch=amd64] https://mirrors4.tuna.tsinghua.edu.cn/llvm-apt/jammy/ llvm-toolchain-jammy main
+deb [arch=amd64] https://mirrors.tuna.tsinghua.edu.cn/llvm-apt/jammy/ llvm-toolchain-jammy main
 # deb-src https://mirrors4.tuna.tsinghua.edu.cn/llvm-apt/jammy/ llvm-toolchain-jammy main
 ```
+### References
+https://mirrors.tuna.tsinghua.edu.cn/help/llvm-apt/
 
 ## pyenv
 ```bash
