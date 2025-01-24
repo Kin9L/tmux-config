@@ -47,6 +47,12 @@ Add the following contents into `/etc/apt/sources.list.d/llvm-apt.list`
 deb [arch=amd64] https://mirrors.tuna.tsinghua.edu.cn/llvm-apt/jammy/ llvm-toolchain-jammy main
 # deb-src https://mirrors4.tuna.tsinghua.edu.cn/llvm-apt/jammy/ llvm-toolchain-jammy main
 ```
+```bash
+sudo apt install clang-20 llvm-20 -y
+sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-20 20
+sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-20 20
+```
+
 ### References
 https://mirrors.tuna.tsinghua.edu.cn/help/llvm-apt/
 
